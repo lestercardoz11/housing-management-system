@@ -1,0 +1,621 @@
+﻿@font-face{
+       font-family:"Karla";
+       src: url("~/fonts/Karla-Bold.ttf");
+       src: url("~/fonts/Karla-BoldItalic.ttf");
+       src: url("~/fonts/Karla-Italic.ttf");
+       src: url("~/fonts/Karla-Regular.ttf");
+}
+
+#Body
+{
+    margin:0px;
+    font-family:'Karla', sans-serif;
+    overflow-y: scroll;
+    min-height:101%;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(~/Images/loader-64x/Preloader_11.gif) center no-repeat #fff;
+}
+
+#Header
+{
+    padding:10px 10px 0px 10px;
+    margin:auto;
+    width:auto;
+    display:block;
+    overflow:auto;
+    height: 100%;
+    background-color:#45E4E7;
+}
+#Header .Heading
+{
+    margin:2px;
+    float:left;
+    height:auto;
+    width:auto;
+    text-align:center;
+}
+#Header .Account
+{
+    float:right;
+    height:auto;
+    width:auto;
+    margin:2px;
+    margin-right:20px;
+    background-color:inherit;
+    text-align:right;
+}
+#Header .panelLogin
+{
+    width: 350px;
+    height:auto;
+    padding:10px;
+    position:relative;
+    background-color:white;
+    border-radius:20px 0px;
+}
+#Header .popupBackground
+{
+    background-color: #EEEEEE;
+    filter: alpha(opacity = 90) !important;
+    opacity: 0.6 !important;
+    z-index: 20;
+}
+#Header .loginButton
+{
+    color:#3B6D76;
+    font: 600 large 'Karla', sans-serif;
+    background-color:inherit;
+    width:100px;
+    height:35px;
+    border: 1px solid #3B6D76;
+    border-radius: 5px;
+    outline:none;
+    margin-right:20px;
+    cursor:pointer;
+}
+.loginButton:hover
+{
+    box-shadow: 1px -1px 20px #AAAAAA;
+}
+#Header .accountButton
+{
+    color:white;
+    font: 400 large 'Karla', sans-serif;
+    background-color:#3B6D76;
+    width:auto;
+    min-width:200px;
+    height:35px;
+    border: none;
+    border-radius: 5px;
+    outline:none;
+    margin-right:20px;
+    cursor:pointer;
+}
+.accountButton:hover
+{
+    box-shadow: 1px -1px 20px #AAAAAA;
+}
+
+#MenuBar
+{
+    outline:none;
+}
+#MenuBar a.static
+{
+    outline:none;
+}
+#MenuBar a.static:hover
+{
+    color: #F1FCFE;
+}
+#MenuBar a.static.selected
+{
+    background-color: inherit !important;
+    color: white !important;
+    border-bottom: 5px solid #3B6D76;
+}
+
+#MAccount
+{
+    outline:none;
+}
+#MAccount a.static
+{
+    outline:none;
+}
+#MAccount a.static:hover
+{
+    color: #353736;
+}
+#MAccount a.static.selected
+{
+    background-color: inherit !important;
+    color: #3B6D76 !important;
+    border-left: 3px solid #3B6D76;
+}
+
+#MenuSociety
+{
+    outline:none;
+}
+#MenuSociety a.static
+{
+    outline:none;
+    width:100%;
+}
+#MenuSociety menuitem
+{
+    width:100%
+}
+#MenuSociety a.static:hover
+{
+    color: #EEEEEE;
+}
+#MenuSociety a.static.selected
+{
+    background-color: inherit !important;
+    color: white !important;
+    border-right: 3px solid white;
+}
+#MenuSociety a.dynamic.selected
+{
+    background-color: inherit !important;
+    color: white !important;
+    border-right: 3px solid white;
+}
+
+#Login h3
+{
+    text-align: center; 
+    margin-top: 5px;
+    font: bold medium;
+    width:auto;
+}
+#Login .sub
+{
+    margin-left:20px;
+    margin-right:20px;
+    font: bold;
+}
+#Login .buttonWrapper
+{
+    width:100%;
+    text-align:center;
+    display:inline;
+}
+#Login .class1
+{
+    text-align:center;
+    font: bold;
+}
+
+#Usertype 
+{
+    width:100%;
+    min-height:30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align:center
+}
+#Usertype label 
+{
+    width:48%;
+    margin:0px 2.5px;
+    background-color:inherit;
+    border-radius:5px;
+    border:none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#Usertype label span 
+{
+    text-align: center;
+    font-size: medium;
+    padding: 5px 0px;
+    display: block;
+    font:bold;
+}
+#Usertype span:hover
+{
+    cursor:pointer;
+}
+#Usertype label input 
+{
+    position:absolute;
+    top:-20px;
+}
+#Usertype input:checked + span 
+{
+    background-color:#3B6D76;
+    color:#FFFFFF;
+    font:300 large;
+    font-family:'Karla', sans-serif;
+}
+#Usertype .rbClass
+{
+    background-color:#FFFFFF;
+    color:#3B6D76;
+    font:300 large;
+    font-family:'Karla', sans-serif;
+}
+
+#Main
+{
+    width:auto;
+    height:auto;
+    min-height:101%;
+    background-color:inherit;
+}
+#Main .main
+{
+    width:auto;
+    height:auto;
+    background-color:#F1FCFE;
+}
+#Main .MainMenu
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Main .leftMenu
+{
+    float:left;
+    width:20%;
+    background-color:#3B6D76;
+}
+#Main .rightMain
+{
+    float:right;
+    width:80%;
+    background-color:inherit;
+}
+#Main .flexWrapper
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Main .left
+{
+    float:left;
+    height: auto;
+    min-width: 250px;
+    background-color:inherit;
+    margin:20px;
+    overflow:hidden;
+    text-align:center;
+}
+#Main .right
+{
+    float:right;
+    min-height:400px;
+    padding:10px;
+    vertical-align:central;
+}
+#Main .sub1
+{
+    margin-left:200px;
+    margin-right:200px;
+    width:auto;
+    height:auto;
+    padding:20px;
+}
+#Main .sliderPanel
+{
+    width: auto;
+    height: 400px;
+    overflow:hidden;
+    text-align:center;
+}
+#Main .confirmPanel
+{
+    width: 350px;
+    height:auto;
+    padding:10px;
+    position:relative;
+    background-color:white;
+    border-radius:3px;
+}
+#Main .confirmBackground
+{
+    background-color: #EEEEEE;
+    filter: alpha(opacity = 90) !important;
+    opacity: 0.6 !important;
+    z-index: 20;
+}
+
+
+#Footer
+{
+    text-align:center;
+    background-color:#353736;
+    color:white;
+    padding:10px;
+    width:auto;
+    height:auto;
+    font: bold;
+}
+#Footer p
+{
+    padding: 5px;
+}
+
+#ImageX {
+    outline:none;
+}
+
+.panelHover:hover
+{
+    box-shadow: 0px 0px 2px #808080;
+}
+
+.Label
+{
+    outline:none;
+    border:none;
+    font: 400 medium;
+    font-family:'Karla', sans-serif;
+    color:#494949;
+}
+
+.Button
+{
+    outline:none;
+    border:none;
+    font: 400 large 'Karla', sans-serif;
+    Width:100px;
+    Height:35px;
+    border-radius:5px;
+    padding:5px;
+    background-color:#5CB559;
+    color:white;
+    cursor:pointer;
+}
+.Button:hover
+{
+    cursor:pointer;
+    filter: brightness(110%);
+}
+
+.shadow
+{
+    box-shadow: 1px -1px 20px #AAAAAA;
+}
+
+.bottomlineTextbox
+{
+    background-color:inherit;
+    border-bottom:solid;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-bottom-color:#353736;
+    width:70%;
+    border-bottom-width:thin;
+    font-size:larger;
+    outline:none;
+    font-family:'Karla', sans-serif;
+}
+.bottomlineTextbox:focus, textarea:focus
+{
+    border:none;
+    border-bottom: 2px solid #5CB559;
+}
+
+.bottomlineTextboxMessage
+{
+    border-bottom:solid;
+    border-left:solid;
+    border-right:none;
+    border-top:none;
+    border-bottom-color:#353736;
+    border-left-color:#353736;
+    width:100%;
+    border-bottom-width:thin;
+    border-left-width:thin;
+    font-size:larger;
+    background-color:inherit;
+    outline:none;
+    font-family:'Karla', sans-serif;
+    font-size:larger;
+}
+.bottomlineTextboxMessage:focus, textarea:focus
+{
+    border:none;
+    border-bottom: 2px solid #5CB559;
+    border-left: 2px solid #5CB559;
+}
+
+.borderedTextbox
+{
+    border: 1px solid #AAAAAA;
+    outline:none;
+    background-color:inherit;
+    width:80%;
+    height:20px;
+    padding:3px;
+    margin:3px;
+    margin-left:0px;
+    font: bold;
+    font-family:'Karla', sans-serif;
+    color: #353736;
+}
+
+.noborder
+{
+    border:none;
+}
+
+.larger
+{
+    height:auto;
+    font:bold large;
+    font-family:'Karla', sans-serif;
+}
+
+.table
+{
+    width:auto;
+    font: bold small 'Karla', sans-serif;
+    color:#353736;
+}
+
+.hidden
+{
+    display:none;
+}
+.show
+{
+    display:normal;
+}
+
+.pagerNextPrevious
+{
+    width:45px;
+    border: none;
+    outline:none;
+    background-color: #EEEEEE;
+    color: #3B6D76;
+    padding:5px;
+    font-weight:500;
+    cursor:pointer;
+}
+.pagerNumeric
+{
+    border: none;
+    outline:none;
+    background-color: #EEEEEE;
+    color: #3B6D76;
+    padding:5px;
+    font-weight:500;
+    cursor:pointer;
+}
+.PagerCurrentNumeric
+{
+    border:none;
+    outline:none;
+    background-color: #3B6D76;
+    color: white;
+    padding:5px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container1 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height:400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height:200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-child {
+    position:absolute;
+    margin:auto;
+    width: 100%;
+    height: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides:first-child{
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+

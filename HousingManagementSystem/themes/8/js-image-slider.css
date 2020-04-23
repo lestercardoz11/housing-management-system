@@ -1,0 +1,90 @@
+/* http://www.menucool.com */
+
+#sliderFrame, #sliderFrame div {
+    box-sizing: content-box;
+}
+
+#sliderFrame 
+{
+    background-color:white;
+}
+
+#slider, #slider .sliderInner {
+    width:960px;height:400px;/* Must be the same size as the slider images */
+    margin: 0 auto; /*center-aligned*/
+    border-radius: 0px;
+}
+
+#slider {
+    background-color:white;
+    position:relative;
+    transform: translate3d(0,0,0);
+    /*box-shadow: 0px 1px 5px #999999;*/
+}
+
+/* the link style (if an image is wrapped by a link) */
+#slider a.imgLink, #slider .video {
+    z-index:2;
+    cursor:pointer;
+    position:absolute;
+    top:0px;left:0px;border:0;padding:0;margin:0;
+    width:100%;height:100%;
+}
+#slider .video {
+    background:transparent url(video.png) no-repeat 50% 50%;
+}
+
+/* Caption styles */
+#slider .mc-caption {
+}
+
+
+/* ------ built-in navigation bullets wrapper ------*/
+#slider .navBulletsWrapper  {
+    text-align:center;
+    background:rgba(255,255,255,0.3);
+    padding:10px 20px;
+    font-size:0; 
+    box-sizing:content-box;
+    position:absolute;
+    margin:auto;
+    width:80px;
+    top:350px;bottom:auto;
+    left:0;right:0;
+    border:1px solid rgba(255,255,255,0.6);
+    border-radius:3px;
+    z-index:3;
+}
+
+/* each bullet */
+#slider .navBulletsWrapper div 
+{
+    width:7px; height:7px;
+    border:3px solid #999;
+    background:none;
+    font-size:0;
+    text-align:center;
+    display:inline-block; *display:inline; zoom:1;
+    overflow:hidden;cursor:pointer;
+    margin:0 4px;/* set distance between each bullet*/
+    border-radius:50%;
+}
+
+#slider .navBulletsWrapper .active {
+    border-color:#000;
+}
+
+
+/* --------- Others ------- */
+
+#slider img, #slider>b, #slider a>b {
+    position:absolute; border:none; display:none;
+}
+
+#slider .sliderInner {
+    overflow:hidden; 
+    position:absolute; top:0; left:0;
+}
+
+#slider>a, #slider video, #slider audio {display:none;}
+#slider div {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
