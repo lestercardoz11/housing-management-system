@@ -1,6 +1,9 @@
 # Housing Management System
 
+This project was done as a part of my internship.
+
 IDE: Visual Studio 2015
+
 Database: SQL Server 2014
  
 The housing management system is a web application that manages societies and its houses, with all the member details assigned to each house. This application provides platform to the society to register on the system, and there are many houses according to each society. Each house is allocated to the owner of the house and all the owners are members of the project. After becoming a member, they can login to give their house on rent or to sell. Users can easily find a house to rent or buy in the society and get the contact information of the owner of the house by visiting the website. Members can also make online complaints related to their homes on the housing management system.
